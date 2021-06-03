@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="src\c4\reverseString.asm">
+    <MASM Include="src\c5\moveLeft.asm">
       <Filter>源文件</Filter>
     </MASM>
   </ItemGroup>
