@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="src\c5\moveLeft.asm">
+    <MASM Include="src\c5\linkArray.asm">
       <Filter>源文件</Filter>
     </MASM>
   </ItemGroup>
