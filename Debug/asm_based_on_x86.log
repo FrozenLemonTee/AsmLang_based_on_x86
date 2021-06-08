@@ -1,4 +1,4 @@
-﻿  Assembling src\c5\linkArray.asm...
-src\c5\linkArray.asm(4): warning A4011: multiple .MODEL directives found : .MODEL ignored
-linkArray.obj : warning LNK4258: 指令“/ENTRY:main@0”与开关“/ENTRY:main”不兼容；已忽略
+﻿  Assembling src\c6\fillArray.asm...
+src\c6\fillArray.asm(4): warning A4011: multiple .MODEL directives found : .MODEL ignored
+fillArray.obj : warning LNK4258: 指令“/ENTRY:main@0”与开关“/ENTRY:main”不兼容；已忽略
   asm_based_on_x86.vcxproj -> D:\FrozenLemonTee\Arbeit\Programmiersprache\Assembly_language\asm_based_on_x86\Debug\asm_based_on_x86.exe
