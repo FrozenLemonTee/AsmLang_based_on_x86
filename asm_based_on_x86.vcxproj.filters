@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="src\c6\fillArray.asm">
+    <MASM Include="src\c9\strRemove.asm">
       <Filter>源文件</Filter>
     </MASM>
   </ItemGroup>

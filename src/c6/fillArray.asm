@@ -15,17 +15,14 @@ main PROC
 	mov edx, offset tip2
 	call WriteString
 	call ReadInt
-	call Crlf
 	push eax
 	mov edx, offset tip3
 	call WriteString
 	call ReadInt
-	call Crlf
 	push eax
 	mov edx, offset tip1
 	call WriteString
 	call ReadInt
-	call Crlf
 	mov ecx, eax
 	pop ebx
 	pop eax
