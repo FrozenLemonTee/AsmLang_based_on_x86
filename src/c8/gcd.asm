@@ -1,5 +1,6 @@
 ; practice 8.11-7
 INCLUDE Irvine32.inc
+INCLUDE Macros.inc
 .386
 .model flat, stdcall
 
@@ -7,8 +8,6 @@ INCLUDE Irvine32.inc
 
 ExitProcess PROTO, dwExitCode: dword
 gcd PROTO, dividend: DWORD, divsior: DWORD
-printChar PROTO, char: BYTE
-printDec PROTO, num: DWORD
 printGcdArr PROTO, ofst1: DWORD, ofst2: DWORD, len: DWORD 
 
 .data
@@ -19,12 +18,6 @@ main PROC
 	invoke printGcdArr, addr arr1, addr arr2, lengthof arr1
 	invoke ExitProcess, 0d
 main ENDP
-
-printChar PROC USES eax, char: BYTE
-	movzx eax, char
-	call WriteChar
-	ret
-printChar ENDP
 
 printDec PROC USES eax, num: DWORD
 	mov eax, num
@@ -41,17 +34,11 @@ printDec ENDP
 ; None
 _printGcdArr PROC USES eax
 lp:
-	invoke printChar, "g"
-	invoke printChar, "c"
-	invoke printChar, "d"
-	invoke printChar, "("
+	mWrite "gcd("
 	invoke printDec, [esi]
-	invoke printChar, ","
+	mWrite ","
 	invoke printDec, [edi]
-	invoke printChar, ")"
-	invoke printChar, " "
-	invoke printChar, "="
-	invoke printChar, " "
+	mWrite ") = "
 	invoke gcd, [esi], [edi]
 	invoke printDec, eax
 	call Crlf

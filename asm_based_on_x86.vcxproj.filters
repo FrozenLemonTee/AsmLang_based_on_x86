@@ -15,8 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="src\c9\strRemove.asm">
+    <MASM Include="src\c10\formatString\main.asm">
       <Filter>源文件</Filter>
     </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\c10\formatString\format.inc">
+      <Filter>头文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

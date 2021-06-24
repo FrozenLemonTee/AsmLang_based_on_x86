@@ -19,7 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="src\c9\strRemove.asm" />
+    <MASM Include="src\c10\formatString\main.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\c10\formatString\format.inc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
